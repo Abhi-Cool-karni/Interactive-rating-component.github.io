@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+  background: var(--Very_Dark_Blue);
+}
+
+:root {
+  --Orange: hsl(25, 97%, 53%);
+
+  /* Neutral */
+
+  --White: hsl(0, 0%, 100%);
+  --Light_Grey: hsl(217, 12%, 63%);
+  --trans: hsla(217, 12%, 63%, 0.232);
+  --Medium_Grey: hsl(216, 12%, 54%);
+  --Dark_Blue: hsl(213, 19%, 18%);
+  --Very_Dark_Blue: hsl(216, 12%, 8%);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  top: 25%;
+  left: 36%;
+  padding: 2em;
+  width: 26em;
+  height: 22em;
+  border-radius: 2em;
+  background: var(--Dark_Blue);
+}
+
+#star-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: var(--trans);
+}
+
+h2 {
+  color: var(--White);
+}
+
+p {
+  font-size: 15px;
+  color: var(--Light_Grey);
+}
+
+#star {
+  display: block;
+  position: relative;
+  left: 28%;
+  top: 28%;
+}
+
+.ratings {
+  position: relative;
+  top: 10px;
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.rating-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  cursor: pointer;
+  width: 35px;
+  height: 35px;
+  color: var(--Medium_Grey);
+  background: var(--trans);
+  border-radius: 50%;
+}
+
+.rating-list:hover {
+  background-color: #fff;
+  color: blue;
+}
+
+#submit {
+  position: relative;
+  top: 1em;
+  height: 35px;
+  border-radius: 20px;
+  border: 0;
+  cursor: pointer;
+  background: var(--Orange);
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+#submit:hover {
+  background: rgb(245, 149, 53);
+  color: #000;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 99%;
+  margin: 10px;
+  color: #fff;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media only screen and (max-width: 375px) {
+  .container {
+    height: 20rem;
+    margin: 0 1rem;
+    width: auto;
+    flex-wrap: wrap;
+    left: auto;
+  }
+
+  footer {
+    position: fixed;
+    width: auto;
+    text-align: center;
+    bottom: 2em;
+  }
+}
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  .container {
+    height: auto;
+    width: auto;
+    left: auto;
+    margin: 0 4rem;
+  }
+}
