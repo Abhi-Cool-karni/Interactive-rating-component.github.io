@@ -82,6 +82,11 @@ p {
   border-radius: 50%;
 }
 
+.active {
+  background: #fff;
+  color: #000;
+}
+
 .rating-list:hover {
   background-color: #fff;
   color: blue;
