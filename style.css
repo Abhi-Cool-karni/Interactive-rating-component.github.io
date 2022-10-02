@@ -45,6 +45,13 @@ body {
   background: var(--trans);
 }
 
+#star {
+  display: block;
+  position: relative;
+  left: 28%;
+  top: 28%;
+}
+
 h2 {
   color: var(--White);
 }
@@ -52,13 +59,6 @@ h2 {
 p {
   font-size: 15px;
   color: var(--Light_Grey);
-}
-
-#star {
-  display: block;
-  position: relative;
-  left: 28%;
-  top: 28%;
 }
 
 .ratings {
@@ -80,6 +80,7 @@ p {
   color: var(--Medium_Grey);
   background: var(--trans);
   border-radius: 50%;
+  border: 0;
 }
 
 .active {
