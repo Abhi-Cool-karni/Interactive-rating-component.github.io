@@ -48,9 +48,10 @@ function ThankYou() {
     rates.style.height = "1.5em";
     rates.style.textAlign = "center";
     rates.style.position = "relative";
-    rates.style.left = "4em";
+    rates.style.left = "auto";
     rates.style.width = "15em";
     rates.style.borderRadius = "30px";
+    rates.style.alignSelf = "center";
     rates.style.display = "block";
 
     para.innerText = `We appreciate you taking the time to give a rating. If you ever need more support, don’t hesitate to get in touch!`;
