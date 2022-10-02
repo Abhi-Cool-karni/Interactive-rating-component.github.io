@@ -145,13 +145,6 @@ footer {
     margin: 1px;
     display: flex;
   }
-
-  /* .attribution {
-    position: fixed;
-    width: auto;
-    text-align: center;
-    bottom: 2em;
-  } */
 }
 
 @media only screen and (min-width: 375px) and (max-width: 768px) {
